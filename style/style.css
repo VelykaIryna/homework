@@ -7,20 +7,28 @@
   url("../fonts/helios/e084a6baf52548d070270ac8ae7884d0.svg#Helios Pro") format("svg"); /* iOS 4.1- */
 }
 
+@font-face {font-family: "AFKlampenborg-Medium";
+  src: url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.eot"); /* IE9*/
+  src: url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/afklampenborg-medium/fb066a8ad71bc2596a1fba995d817755.svg#AFKlampenborg-Medium") format("svg"); /* iOS 4.1- */
+}
+
 /*------------------WRAPPER------------------------*/
 .body {
 	width: 1200px;
 	margin: 0 auto;
-	background: linear-gradient(to top, #fff , #d5ddde);
-	background: -moz-linear-gradient (to top, #fff, #d5ddde);
-	background: -webkit-linear-gradient (to top, #fff, #d5ddde);
-	background: -o-linear-gradient (to top, #fff, #d5ddde);
-	background: -ms-linear-gradient (to top, #fff, #d5ddde);
+	background: linear-gradient(to top, #fff 65%, #d5ddde);
+	background: -moz-linear-gradient(to top, #fff 65%, #d5ddde);
+	background: -webkit-linear-gradient(to top, #fff 65%, #d5ddde);
+	background: -o-linear-gradient(to top, #fff 65%, #d5ddde);
+	background: -ms-linear-gradient(to top, #fff 65%, #d5ddde);
 }
 .wrapper {
 	width: 780px;
 	margin: 0 auto;
-	background: linear-gradient(to top, #fff , #d5ddde);
 }
 /*------------------------------------------------*/
 /*------------------HEADER------------------------*/
@@ -87,7 +95,7 @@
 #nav ul li a {
 	display: block;
 	color: #939598;
-	padding: 15px;
+	padding: 15px 30px;
 	font: 16px Arial, sans-serif;
 	text-decoration: none;
 	background: #dde3e4;
@@ -110,24 +118,236 @@
 	color: #02a4fa;
 	background: linear-gradient(to top, #d5ddde, #fff);
 	border-bottom: 0;
-	padding: 16px;
+	padding: 16px 30px;
 }
 /*--------------------********************---------------*/
 /*--------------------ASIDE------------------------------*/
 #aside {
 	width: 230px;
 	height: 560px;
-	border: 1px solid black;
-}
-#aside h3 {
-	margin-top: 25px;
-	font: 20px/33px Arial, sans-serif;
-	color: #03a7fe;
 	float: left;
 }
+#aside ul {
+	margin-top: 26px;	
+}
+
 .trigon {
-	width: 12px;
-	height: 10px;
-	margin: 35px 0 0 105px;
+	width: 10px;
+	height: 7px;
+	margin-left: 8px; 
 	color: #03a7fe;
 }
+#aside li {
+	border-bottom: 1px solid #c7c7c6;
+}
+
+#aside a {
+	padding-left: 10px;
+	text-decoration: none;
+	font: 14px/33px Arial;
+	color: #555555;
+}
+
+#aside a:hover {
+	color: #03a7fe;
+}
+
+#aside li {
+	border-bottom: 1px solid #c7c7c6;
+	color: #03a7fe;
+	font-weight: bold;
+}
+
+#aside li:first-child {
+	border-bottom: none;
+	margin-bottom: 19px;
+}
+
+.categories {
+	font: 20px/33px Arial, sans-serif;
+	color: #03a7fe;
+} 
+
+#aside li:last-child {
+	border-bottom: none;
+}
+
+/*-------------****************-------------------------*/
+/*-------------SECTION-------------------------*/
+
+#section {
+	width: 528px;
+	float: right;
+}
+
+#section h4 {
+	margin-top: 64px;
+	font: 26px/33px Arial;
+	color: #010101;
+}
+
+.company {
+	margin-top: 15px;
+	float: left;
+	border-top: 1px solid #02a4fa;
+	 
+}
+
+.company img {
+	padding: 15px 21px 0 10px;
+	float: left;
+}
+
+.table {
+	text-align: left;
+	width: 393px;
+	float: right;
+	font: 12px Arial, sans-serif; 
+	color: #505050;
+	margin-bottom: 10px;
+}
+
+.table tr {
+	height: 24px;
+}
+
+.table td {
+	padding-left: 5px;
+}
+
+.grey td {
+	border-bottom: 3px solid white;
+}
+
+.table caption {
+	margin: 10px 0 7px 0;
+	text-align: left;
+	font: 22px/33px Arial;
+	color: #03a7fe;
+}
+
+.grey {
+	background-color: #dfe5e6;	
+}
+
+.light-gray {
+	background-color: #eceff0;
+}
+
+.black {
+	font: bold 12px Arial, sans-serif;
+	color: #000000;	
+}
+
+.black a {
+	font: bold 12px Arial, sans-serif;
+	color: #000000;	
+}
+
+.black img {
+	margin-top: -6px;
+	margin-right: -6px;
+}
+.grey-tr {
+	background-color: #dfe5e6;
+}
+
+.site {
+	color: #02a4fa;
+}
+/*-------------------------------------------------------------------*/
+/*---------------BUTTOM----------------------------------------------*/
+.button {
+	width: 230px;
+	height: 64px;
+	margin-top: 49px;
+	border-top: 1px solid #c7c7c6;
+	border-bottom: 1px solid #c7c7c6; 
+}
+
+#button {
+	margin: 15px 0 0 67px;
+	width: 102px;
+	height: 33px;
+	font: 19px "AFKlampenborg-Medium", sans-serif;
+	color: #939598;
+	background-color: #ffffff;
+	border: 2px solid #ffa11c;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-o-border-radius: 25px;
+	-ms-border-radius: 25px;
+	cursor: pointer;
+}
+
+#button img {
+	padding-right: 10px;
+}
+
+.partners {
+	text-align: center; 
+}
+
+#partners li {
+	border-bottom: 0;
+}
+
+#partners img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+
+#partners img:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+	filter: none;
+}
+
+/****************************************************/
+/*----------------FOOTER----------------------------*/
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	margin-top: 118px;
+	width: 780px;
+	height: 70px;
+	font: 10px/33px Arial;
+	color: #78797b;
+	border-top: 1px solid #c7c7c6;
+}
+
+.footer {
+	margin-left: 237px;
+	width: 503px;
+	height: 30px;
+	padding: 5px 0 5px 12px;
+	background-color: #d9dada;
+	border-radius: 0 0 20px 20px;
+}
+
+.footer img {
+	float: right;
+	padding-right: 12px;
+	padding-top: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
