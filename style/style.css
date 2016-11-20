@@ -34,7 +34,7 @@
 /*------------------HEADER------------------------*/
 #header {
 	width: 780px;
-	height: 164px;
+	height: 164px; /*Высота???*/
 	margin: 0 auto;
 	border-bottom: 2px solid #77787b;
 	position: relative;
@@ -61,7 +61,7 @@
 }
 
 .logo {
-	position: absolute;
+	position: absolute; /*Неужели логотип по другому не ставал?*/
 	top: 41px;
 	float: left;
 }
@@ -116,7 +116,7 @@
 
 #nav ul li a:hover {
 	color: #02a4fa;
-	background: linear-gradient(to top, #d5ddde, #fff);
+	background: linear-gradient(to top, #d5ddde, #fff);/*Почему на боди есть префиксы а тут нет?*/
 	border-bottom: 0;
 	padding: 16px 30px;
 }
@@ -124,7 +124,7 @@
 /*--------------------ASIDE------------------------------*/
 #aside {
 	width: 230px;
-	height: 560px;
+	height: 560px;/*рррррррр*/
 	float: left;
 }
 #aside ul {
@@ -145,7 +145,7 @@
 	padding-left: 10px;
 	text-decoration: none;
 	font: 14px/33px Arial;
-	color: #555555;
+	color: #555555;/*можно 555*/
 }
 
 #aside a:hover {
@@ -236,7 +236,7 @@
 
 .black {
 	font: bold 12px Arial, sans-serif;
-	color: #000000;	
+	color: #000000;	/*000*/
 }
 
 .black a {
@@ -257,6 +257,7 @@
 }
 /*-------------------------------------------------------------------*/
 /*---------------BUTTOM----------------------------------------------*/
+/*Buttom - интересно, где опечатка :)*/
 .button {
 	width: 230px;
 	height: 64px;
