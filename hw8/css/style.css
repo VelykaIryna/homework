@@ -1,0 +1,289 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+/***************HEADER*********************/
+#header h1 {
+  margin-bottom: 2%;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px; }
+  #header h1 a {
+    text-decoration: none;
+    color: #2d3950; }
+  #header h1 img {
+    margin-right: 10px; }
+
+/*********************WELCOME******************************/
+.welcome {
+  min-height: 800px;
+  text-align: center;
+  background: url(../images/baner.png) center center no-repeat; }
+  .welcome h1 {
+    margin-top: 15%;
+    padding-bottom: 4%;
+    display: inline-block;
+    border-bottom: 2px solid #15a4fa;
+    color: #fff;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 47px;
+    text-transform: uppercase; }
+  .welcome p {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 47px; }
+  .welcome a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 47px;
+    border: 1px solid #15a4fa;
+    padding: 21px 32px; }
+  .welcome span {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 7%; }
+
+/*******************SIMPLE***********************************/
+.simple {
+  text-align: center;
+  background-color: #f6f9f9; }
+  .simple h2 {
+    margin: 4% 0 1% 0;
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: 400; }
+  .simple p {
+    margin-bottom: 7%;
+    color: #999;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; }
+
+/********************ICONS******************************/
+.icons ul {
+  margin-top: 6%;
+  list-style-type: none; }
+  .icons ul li {
+    text-align: center; }
+    .icons ul li span {
+      text-shadow: 0.8px 0.6px 1px rgba(2, 2, 2, 0.4);
+      color: #fff;
+      padding: 20px 24px;
+      font-weight: 400;
+      font-size: 40px;
+      background-color: #5fc3ff;
+      border-radius: 2px; }
+.icons .mobile {
+  padding-left: 8px;
+  padding-right: 8px; }
+.icons .plane {
+  padding-right: 8px; }
+.icons h3 {
+  padding-top: 5%;
+  color: #2d3950;
+  font-size: 22px;
+  font-weight: 400; }
+.icons p {
+  margin-bottom: 7%;
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px; }
+
+/*****************PORTFOLIO******************************/
+.portfolio {
+  text-align: center;
+  background-color: #f6f9f9; }
+  .portfolio h2 {
+    margin-top: 6%;
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: 400; }
+  .portfolio p {
+    padding-bottom: 5%;
+    color: #909090;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px; }
+  .portfolio ul {
+    list-style-type: none; }
+    .portfolio ul li {
+      margin-bottom: 2%;
+      display: inline-block;
+      position: relative;
+      overflow: hidden; }
+      .portfolio ul li img {
+        display: block; }
+  .portfolio .portfolio-img {
+    padding-bottom: 7%; }
+
+.descr {
+  position: absolute;
+  left: 14px;
+  width: 0;
+  height: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(21, 164, 250, 0.7);
+  padding: 25%;
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(90deg);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .descr a:hover {
+    text-decoration: none; }
+  .descr i {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px; }
+
+.portfolio-img li:hover .descr {
+  opacity: 1;
+  top: 0;
+  transform: rotateY(0deg); }
+
+/**************modal-window****************/
+#modalWindow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: auto;
+  display: none;
+  z-index: 2; }
+
+#modalWindow:target {
+  display: block; }
+
+a.close {
+  float: right;
+  text-decoration: none;
+  font-size: 3em;
+  color: #080809; }
+  a.close:hover {
+    color: #34495e; }
+
+.modal-img {
+  margin-top: 10%;
+  margin-bottom: 100%;
+  width: 500px;
+  background-color: #fff;
+  border: 1px solid grey; }
+  .modal-img .close i {
+    margin-bottom: 400px;
+    color: #fa4b15;
+    font-size: 30px;
+    font-weight: 400; }
+
+/*******************FORM***************************/
+.form {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  background: url(../images/layer-36.png) center center no-repeat; }
+  .form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2d3950;
+    opacity: 0.9;
+    z-index: -2; }
+  .form h2 {
+    padding-top: 6%;
+    color: #fff;
+    font-size: 41px;
+    font-weight: 400; }
+  .form p {
+    padding-bottom: 2%;
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px; }
+  .form form {
+    margin-bottom: 10%; }
+  .form ul {
+    width: 350px;
+    margin: 0 auto;
+    list-style-type: none; }
+    .form ul li {
+      margin-bottom: 2%;
+      padding: 5px; }
+      .form ul li input, .form ul li textarea {
+        padding: 10px 0 10px 5px;
+        width: 300px;
+        background-color: transparent;
+        border: 1px solid #999;
+        color: #999;
+        font-size: 15px;
+        font-weight: 400; }
+  .form #button {
+    padding: 5px 30px;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #15a4fa; }
+
+/*************************************************/
+/***************FOOTER***********************************/
+#footer {
+  background-color: #f6f9f9; }
+  #footer p {
+    margin-top: 3%;
+    float: left;
+    color: #999;
+    font-size: 15px;
+    font-weight: 400; }
+  #footer .social {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    float: right; }
+    #footer .social i {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 15px;
+      background-color: #15a4fa; }
+
+/********************************************************/
+@media screen and (max-width: 768px) {
+  .welcome h1 {
+    padding-top: 20%;
+    margin-bottom: 20%;
+    font-size: 60px; }
+
+  .simple h2 {
+    font-size: 30px; }
+  .simple p {
+    font-size: 15px; }
+
+  .portfolio h2 {
+    font-size: 30px; }
+
+  .form h2 {
+    font-size: 30px; }
+  .form form {
+    margin-bottom: 15%; }
+    .form form li {
+      width: 200px; } }
+
+/*# sourceMappingURL=style.css.map */
